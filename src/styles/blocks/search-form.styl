@@ -1,9 +1,27 @@
-.search-form
-    margin-top 30px
+.search
+	&-form
+		margin-top 30px
+		&-group
+			display flex
+			.awesomplete
+				width 100%
+	&-input
+		width 100%
+		height 27px
+	&-empty
+		margin 5em 0
+		text-align center
+	&-button
+		display flex
+		margin-left 10px
+		button
+			&:disabled
+				color #848484
+		
 
 /*
-    for responsive
+	for responsive
 */
 .search-form
-    +below(650px)
-        display none
+	+below(650px)
+		display none
